@@ -15,7 +15,7 @@ public class ApiService {
 
 	public String fetchDataFromApi() throws Exception {
 		Properties p = new Properties();
-		// for (int i = 1; i < 19; i++) {
+
 		File file = new File("D:\\Downloads\\LearningJava\\src\\main\\resources\\url.properties");
 		FileInputStream fileInputStream = new FileInputStream(file);
 		System.out.println(fileInputStream);
@@ -32,6 +32,6 @@ public class ApiService {
 		} else {
 			throw new Exception("API request failed with status code: " + response.statusCode());
 		}
-		// }
+
 	}
 }
